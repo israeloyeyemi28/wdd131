@@ -1,61 +1,53 @@
-<!-- this content was forked from Google Web Developers 10 Modern Layouts https://youtu.be/qm0IfG1GyZU?t=465-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Israel Oyeyemi ">
+    <meta name="description"
+        content="Welcome to  website! Discover more about my professional journey, linkedin page and so on.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wgth@100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>WDD 131-Dynamic Web Fundamentals- Israel Oyeyemi</title>
 </head>
 
 <body>
     <header>
-        <h1 contenteditable>Header</h1>
+        <h1>WDD 131-Dynamic Web Fundamentals- Israel Oyeyemi</h1>
     </header>
-    <div class="left-sidebar" contenteditable>Left Sidebar</div>
-    <main contenteditable></main>
-    <div class="right-sidebar" contenteditable>Right Sidebar</div>
-    <footer contenteditable>Footer Content</footer>
+    <!-- <nav class="links">
+        <a href="www.com/in/israel-oyeyemi-016355267" title="Linkedin" class="active">Linkedin</a>
+        <a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1/ne/3?lang=eng&id=p7#p7"
+            title="Scripture">Scripture</a>
+        <a href="#" title="Final Project">Final Project</a>
+    </nav> -->
+
+    <nav>
+        <ul>
+            <li><a href="www.com/in/israel-oyeyemi-016355267" title="Linkedin" class="active">Linkedin</a></li>
+            <li><a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1/ne/3?lang=eng&id=p7#p7"
+                    title="Scripture">Scripture</a></li>
+            <li><a href="#" title="Final Project">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card"></section>
+        <section class="card"></section>
+    </main>
+    <footer>
+        <span id="currentyear">
+            <p>😜Israel Oyeyemi Oyedepo😜 Nigeria</p>
+            <p id="lastModified"></p>
+        </span>
+    </footer>
 </body>
-<style>
-    body {
-        display: grid;
-        height: 100vh;
-        grid-template: auto 1fr auto / 300px 1fr auto;
-    }
-
-    header {
-        background: lightpink;
-        padding: 2rem;
-        grid-column: 1 / 4;
-    }
-
-    .left-sidebar {
-        background: lightblue;
-        grid-column: 1 / 2;
-    }
-
-    main {
-        background: coral;
-        grid-column: 2 / 3;
-    }
-
-    .right-sidebar {
-        background: yellow;
-        grid-column: 3 / 4;
-    }
-
-    footer {
-        background: wheat;
-        padding: 2rem;
-        text-align: center;
-        grid-column: 1 / 4;
-    }
-
-    .left-sidebar,
-    .right-sidebar {
-        padding: 1rem;
-    }
-</style>
 
 </html>
