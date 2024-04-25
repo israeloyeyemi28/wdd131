@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapisss.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rock+Salt&display=swap");
 
 * {
   margin: 0;
@@ -14,10 +14,14 @@ body {
   background-color: #ccc8c8;
 }
 h1,
-h2,
 nav ul li a {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+}
+
+h2 {
+  font-family: "Rock Salt", sans-serif;
+  padding: 20px 20px;
 }
 
 header {
