@@ -8,44 +8,76 @@
     <meta name="description"
         content="Welcome to  website! Discover more about my professional journey, linkedin page and so on.">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wgth@100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>WDD 131-Dynamic Web Fundamentals- Israel Oyeyemi</title>
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131-Dynamic Web Fundamentals- Israel O. Oyedepo</title>
 </head>
 
 <body>
     <header>
-        <h1>WDD 131-Dynamic Web Fundamentals- Israel Oyeyemi</h1>
+        <h1>WDD 131-Dynamic Web Fundamentals- <span class="span-name">Israel Oyeyemi</span></h1>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="www.com/in/israel-oyeyemi-016355267" title="Linkedin" class="active">Linkedin</a></li>
+                <li><a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1/ne/3?lang=eng&id=p7#p7"
+                        title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+
     </header>
-    <!-- <nav class="links">
-        <a href="www.com/in/israel-oyeyemi-016355267" title="Linkedin" class="active">Linkedin</a>
-        <a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1/ne/3?lang=eng&id=p7#p7"
-            title="Scripture">Scripture</a>
-        <a href="#" title="Final Project">Final Project</a>
-    </nav> -->
-
-    <nav>
-        <ul>
-            <li><a href="www.com/in/israel-oyeyemi-016355267" title="Linkedin" class="active">Linkedin</a></li>
-            <li><a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1/ne/3?lang=eng&id=p7#p7"
-                    title="Scripture">Scripture</a></li>
-            <li><a href="#" title="Final Project">Final Project</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section class="card"></section>
-        <section class="card"></section>
+        <section class="abt-card">
+
+
+
+
+            <h2>About Me</h2>
+            <div class="my-info">
+                <p>My name is Israel Oyeyemi and im from Nigeria. I grew up in Lagos state and I am a student of Brigham
+                    Young University studying Software Development. I love Music, learning, dancing, coding, and playing
+                    games.</p>
+                <img src="images/my-profile-pic.jpg" alt="Nigerian flag" class="flag-img">
+
+            </div>
+            <h2 class="lagos">Lagos, Nigeria</h2>
+            <hr>
+            <div class="city-info">
+                <img src="images/download.jpeg" alt="My profile Image" class="avatar">
+                <h3 class="flag-txt">Official Nigerian flag</h3>
+                <p>Lagos State, located in southwestern Nigeria, is a vibrant, colourful and bustling metropolis known
+                    for its economic significance, cultural diversity, and dynamic energy. Its the country's commercial
+                    hub, home to Nigeria's largest city, Lagos City, which is teeming with skyscrappers, bustling
+                    markets, touts and thugs, and a thriving tech scene. Its state boasts beautiful beaches, historical
+                    landmarks, and a rich cultural heritage. Despite its challenges with infrastructure and
+                    overcrowding, Lagos remains a beacon of opportunity and innovation of africa.</p>
+            </div>
+        </section>
+
+        <section class="webdev-card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://www.sololearn.com">Sololearn Academy</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://www.Youtube.com">Youtube</a></li>
+                <li><a href="https://www.devslopes.com">Devslopes</a></li>
+            </ul>
+        </section>
     </main>
+
+
     <footer>
         <span id="currentyear">
-            <p>😜Israel Oyeyemi Oyedepo😜 Nigeria</p>
-            <p id="lastModified"></p>
+            <p>
+                &copy<span id="year">
+                </span>
+                😜Israel Oyeyemi Oyedepo😜 Nigeria
+            </p>
+            <p> <span id="lastModified"></span></p>
         </span>
     </footer>
 </body>
