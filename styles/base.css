@@ -91,7 +91,7 @@ section h2 {
   text-align: center;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid rgb(33, 33, 165);
   background-color: blue;
   color: #fff;
 }
