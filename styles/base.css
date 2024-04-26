@@ -122,6 +122,7 @@ section li {
 .avatar {
   width: 80%;
   height: 80%;
+  max-width: 100%;
   margin: 1rem 0;
   border: dotted 3px black;
   border-radius: 15px;
@@ -149,6 +150,7 @@ section li {
 }
 
 .city-info img {
+  max-width: 100%;
   margin: 2rem;
   width: 70%;
   height: 70%;
