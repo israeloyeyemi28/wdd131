@@ -145,7 +145,7 @@ section li {
   font-size: smaller;
   text-align: center;
   padding: 1rem;
-  background-color: none;
+  background-color: transparent;
   margin: 0 auto;
 }
 
