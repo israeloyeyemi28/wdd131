@@ -28,4 +28,8 @@
   .stuff {
     margin: 1rem auto;
   }
+   main . stuff {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+    }
 }
