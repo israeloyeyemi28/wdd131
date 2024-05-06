@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <meta name="author" content="Israel Oyeyemi Oyedepo">
+    <meta name="description" content="Israel Oyeyemi Oyedepo Media query learning activity example page.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Nigeria</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 740px)" srcset="images/lagos-large.jpg">
+                <source media="(min-width: 500px)" srcset="images/lagos-small.jpg">
+                <img src="images/temple.webp" alt="City" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data">
+            <h2 class="h2">Data:</h2>
+            <ul>
+                <li>Area: <span class="value">
+                        923,768 sq Km
+                    </span> </li>
+                <li>Population: <span class="value">
+                        200 Million
+                    </span></li>
+                <li>Capital: <span class="value">
+                        Abuja
+                    </span></li>
+                <li>Languages: <span class="value">
+                        Yoruba, Igbo, Hausa
+                    </span></li>
+                <li>Currency: <span class="value">
+                        Naira
+                    </span></li>
+                <li>Time Zone: <span class="value">
+                        UTC+1
+                    </span></li>
+                <li>Internet TLD: <span class="value">
+                        .ng
+                    </span></li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2 class="h2">Weather</h2>
+            <ul>
+                <li>Temperature: <span class="value">5°C</span></li>
+                <li>Conditions: <span class="value">Partly Cloudy</span></li>
+                <li>Wind: <span class="value"></span>10km/h</li>
+                <li>Wind Chill: <span class="weather-value"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Israel Oyeyemi Oyedepo | Nigeria</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+
+</html>
