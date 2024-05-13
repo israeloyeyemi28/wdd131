@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: silver;
+}
+main {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 100%;
+  background: #000;
+  animation: fade 5s ease-in;
+}
+p::first-letter {
+  margin: 0 0.5rem 0.1rem 0;
+  color: red;
+  line-height: 1;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  float: left;
+}
+
+header {
+  text-align: center;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
