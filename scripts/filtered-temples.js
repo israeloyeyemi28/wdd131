@@ -75,6 +75,22 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
   },
   // Add more temple objects here...
+  {
+    templeName: "Guatemala City",
+    location: "Guatemala City, Guatemala",
+    dedicated: "1984, December, 14",
+    area: 17609,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guatemala-city-guatemala/800x1280/guatemala-lds-temple-82739-wallpaper.jpg",
+  },
+  {
+    templeName: "Quetzaltenango Guatemala",
+    location: "Quetzaltenango Guatemala",
+    dedicated: "2011, December, 11",
+    area: 21086,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/quetzaltenango-guatemala/800x500/quetzaltenango-guatemala-temple-lds-893073-wallpaper.jpg",
+  },
 ];
 
 /* Declare and initialize global variables */
@@ -110,17 +126,10 @@ old.addEventListener("click", () => {
 });
 news.addEventListener("click", () => {
   resetOpts();
-  old.classList.toggle("active");
+  news.classList.toggle("active");
   let filterTemples = temples.filter(
     (temple) => new Date(temple.dedicated).getFullYear() > 2000
   );
-  displayTemples(filterTemples);
-});
-
-large.addEventListener("click", () => {
-  resetOpts();
-  large.classList.toggle("active");
-  let filterTemples = temple.filter((temple) => new Date(temple.area > 90000));
   displayTemples(filterTemples);
 });
 
@@ -128,6 +137,14 @@ small.addEventListener("click", () => {
   resetOpts();
   small.classList.toggle("active");
   let filterTemples = temples.filter((temple) => new Date(temple.area < 10000));
+  displayTemples(filterTemples);
+});
+
+large.addEventListener("click", () => {
+  resetOpts();
+  large.classList.toggle("active");
+  let filterTemples = temples.filter((temple) => new Date(temple.area > 90000));
+  displayTemples(filterTemples);
 });
 
 function displayTemples(filterTemples) {
