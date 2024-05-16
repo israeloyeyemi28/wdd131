@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms Example</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="password">I would like this password to be :</label>
+        <p>(at least 6 characters, no spaces)</p>
+        <input type="password" id="password" name="password" required title="(at least 6 characters, no spaces)"
+            pattern="\S{6,}">
+        <label for="favcolor"> Favourite Color</label>
+        <input type="color" list="colors" id="favcolor" name="favcolor">
+        <datalist id="colors">
+            <option value="#0000ff"></option>
+            <option value="#008000"></option>
+            <option value="#ff0000"></option>
+            <option value="#663399"></option>
+        </datalist>
+        <br>
+        <label for="about">Article Title</label>
+        <br>
+        <input type="text" name="about" id="about" readonly value="https://www.thehtml5herald.com/register.html">
+    </form>
+</body>
+
+</html>
