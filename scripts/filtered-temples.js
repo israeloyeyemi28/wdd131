@@ -163,14 +163,14 @@ news.addEventListener("click", () => {
 small.addEventListener("click", () => {
   resetOpts();
   small.classList.toggle("active");
-  let filterTemples = temples.filter((temple) => new Date(temple.area < 10000));
+  let filterTemples = temples.filter((temple) => (temple.area < 10000));
   displayTemples(filterTemples);
 });
 
 large.addEventListener("click", () => {
   resetOpts();
   large.classList.toggle("active");
-  let filterTemples = temples.filter((temple) => new Date(temple.area > 90000));
+  let filterTemples = temples.filter((temple) => (temple.area > 90000));
   displayTemples(filterTemples);
 });
 
