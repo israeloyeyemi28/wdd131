@@ -147,7 +147,7 @@ old.addEventListener("click", () => {
   resetOpts();
   old.classList.toggle("active");
   let filterTemples = temples.filter(
-    (temple) => new Date(temple.dedicated).getFullYear() < 1900
+    (temple) => temple.dedicated).substring(0, 4) < 1900
   );
   displayTemples(filterTemples);
 });
@@ -155,7 +155,7 @@ news.addEventListener("click", () => {
   resetOpts();
   news.classList.toggle("active");
   let filterTemples = temples.filter(
-    (temple) => new Date(temple.dedicated).getFullYear() > 2000
+    (temple) => temple.dedicated).substring(0, 4) > 2000
   );
   displayTemples(filterTemples);
 });
