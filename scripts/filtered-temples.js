@@ -75,6 +75,33 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
   },
   // Add more temple objects here...
+    {
+      templeName: "Durban South Africa",
+      location: "Umhlanga, South Africa",
+      dedicated: "2020, February, 16",
+      area: 19860,
+      alternate: "Durban South Africa",
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/5-a34bb1899983ed73e499a18da741b3704e1d4d35.jpg"
+    },
+    {
+      templeName: "Copenhagen Denmark",
+      location: "Frederiksberg, Denmark",
+      dedicated: "2004, May, 23",
+      area: 25000,
+      alternate: "Copenhagen Denmark Temple",
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/copenhagen-denmark/400x250/copenhagen-denmark-temple-lds-278232-wallpaper.jpg"
+    },
+    {
+      templeName: "Asunción Paraguay",
+      location: "Asunción, Paraguay",
+      dedicated: "2002, May, 19",
+      area: 11906,
+      alternate: "Asunción Paraguay Temple",
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/asuncion-paraguay/400x250/2-5b20486ae3876279c35be147ef9e63aec256a459.jpeg"
+    }, 
   {
     templeName: "Guatemala City",
     location: "Guatemala City, Guatemala",
