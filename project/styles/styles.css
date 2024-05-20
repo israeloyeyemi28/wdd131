@@ -145,7 +145,9 @@ nav a:hover {
     ". . home home . ."
     ". . . top . ."
     ". left left right right ."
-    "page2 page2 . . page3 page3";
+    "page2 page2 . . page3 page3"
+    ". . .bottom. ."
+    ". . page4 page4 . .";
 }
 .sitemap > div {
   text-align: center;
@@ -165,6 +167,11 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+.sm-page4 {
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+}
 .top {
   grid-area: top;
   border-left: 1px solid;
@@ -178,4 +185,9 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+.bottom {
+  grid-area: bottom;
+  border-left: 1px solid;
+  border-left: 1px solid;
 }
