@@ -1,0 +1,69 @@
+<main>
+    <h1>⚙️ Using localStorage</h1>
+    <p>This demonstration page keeps track of the total number of visits by a user agent (client) on a single page
+        utilizing the localStorage option of the Web Storage API.</p>
+    <p>Remember that localStorage stores string values in key-value pairs.</p>
+
+    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+</main>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        font-family: Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        width: 760px;
+        background-color: rgba(225, 225, 255, 0.2);
+    }
+
+    p {
+        margin: 1rem;
+    }
+
+    .label {
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    #visits {
+        color: navy;
+        font-weight: bolder;
+        font-size: larger;
+    }
+</style>
+
+<script>
+    // 1️⃣ Initialize display element variable
+    const visitsDisplay = document.querySelector(".visits");
+
+    // 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+    let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+    // 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
+    if (numVisits !== 0) {
+        visitsDisplay.textContent = numVisits;
+    } else {
+        visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+    }
+
+    // 4️⃣ increment the number of visits by one.
+    numVisits++;
+
+    // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
+    localStorage.setItem("numVisits-ls", numVisits);
+
+    // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+
+</script>
