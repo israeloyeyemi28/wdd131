@@ -104,7 +104,6 @@ button {
   padding: 5rem;
   background-repeat: no-repeat;
   width: 100%;
-  /*max-width: 500px; */
   background-image: url(../images/carousel-1.jpg);
   background-position: center;
   background-size: calc(100% + 10rem);
@@ -141,15 +140,20 @@ button {
   text-align: center;
   background-color: var(--blue-bg);
   color: var(--white-txt);
-  padding-top: 1.5rem;
+  padding-top: 10px;
+  border-radius: 10px;
   margin: 0.7rem;
 }
+.location-div:hover,
+.contact-div:hover {
+  background-color: var(--light-blue);
+}
 .email-div {
-  background-color: var(--sky-blue);
+  background-color: var(--light-sky-blue);
   color: var(--black-txt);
 }
 .email-div:hover {
-  background-color: var(--light-sky-blue);
+  background-color: var(--sky-blue);
 }
 .img-div {
   margin: 0 auto;
@@ -162,32 +166,119 @@ img-2 {
   max-width: 100%;
   height: auto;
 }
-/* .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.list i {
+  display: block;
+  background-color: var(--green-bg);
+  padding: 7.5px;
+  color: var(--white-txt);
 }
-.box {
-  margin-top: 1.5rem;
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bolder;
+  font-size: 25px;
 }
-h6 {
-  font-weight: 600;
-  color: var(--sky-blue);
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+p {
+  padding-left: 10px;
 }
-.box h1 {
-  font-size: 2.5rem;
-  text-align: left;
+.h3-txt {
+  padding: 1rem 2.5rem;
 }
-.box h4 {
-  font-size: 1.55rem;
-  text-align: left;
-  padding: 1rem 2rem;
+
+.h1-txt {
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 3rem;
 }
-.box h5 {
-  font-weight: 600;
-  padding: 1.5rem;
-  text-align: left;
-  font-style: italic;
-  font-size: 1.55rem;
-} */
+.h2-big {
+  color: var(--black-txt);
+  padding-top: 25px;
+  font-size: 16px;
+  text-align: center;
+}
+.h1-big {
+  color: var(--white-txt);
+  font-size: 51px;
+  font-weight: bolder;
+  color: #194376;
+  text-align: center;
+}
+
+.service-container {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  display: block;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 150px;
+  background-color: #8e9999;
+}
+.offer-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 100px;
+  height: 100px;
+}
+.price-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-sky-blue);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+  border: 10px solid #fff;
+}
+.price {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.basic-h1 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: larger;
+  color: #fff;
+}
+.basic-h2 {
+  padding: 10px;
+  margin: 10px;
+}
+.basic-span {
+  font-size: 30px;
+}
+
+/* PRICES */
+.price-con {
+  background-color: #000;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.price-box {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2222b4;
+}
