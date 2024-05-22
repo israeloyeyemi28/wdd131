@@ -1,0 +1,57 @@
+/* large view navigation ************************************/
+@media screen and (min-width: 37.5em) {
+  #menu {
+    display: none;
+    /* hide hamburger button */
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+  .logo {
+    display: none;
+    width: 75px;
+    border-radius: 10px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    background-color: transparent;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation a {
+    display: block;
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+  .navigation a:hover {
+    background-color: rgb(71, 255, 71);
+    border-radius: 10px;
+  }
+
+  .active::before {
+    content: "";
+  }
+  nav .active {
+    color: #ffffff;
+    text-decoration: underline;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  main .row {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
