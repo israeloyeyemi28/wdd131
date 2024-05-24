@@ -119,8 +119,7 @@ button {
   width: 100%;
   background-image: url(../images/carousel-1.jpg);
   background-position: center;
-  /* background-size: calc(100% + 10rem); */
-  /* text-align: center; */
+  background-size: calc(100% + 10rem);
 }
 .laundry-box {
   padding: 1rem;
@@ -143,10 +142,6 @@ button {
 }
 
 .row {
-  /* display: flex;
-  flex-direction: column;
-  padding: 1rem; */
-
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -177,18 +172,13 @@ button {
   background-color: var(--sky-blue);
 }
 .img-div {
-  margin: 0 auto;
   text-align: center;
-  /* align-items: center;
-  justify-content: center;
-  flex-direction: column; */
 }
-img-div picture {
-  margin: 0 1rem;
-}
-img-2 {
-  max-width: 100%;
-  height: auto;
+
+.img-2 {
+  width: 300px;
+  /* margin: 0 2rem; */
+  height: 300px;
 }
 .list i {
   display: block;
