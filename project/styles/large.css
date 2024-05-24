@@ -13,11 +13,7 @@
   a {
     font-size: 1rem;
   }
-  .logo {
-    display: none;
-    width: 75px;
-    border-radius: 10px;
-  }
+
   header {
     display: flex;
     align-items: center;
@@ -34,6 +30,7 @@
     display: block;
     flex: 1 1 100%;
     padding: 1rem;
+    color: #000;
   }
   .navigation a:hover {
     background-color: rgb(71, 255, 71);
@@ -44,14 +41,32 @@
     content: "";
   }
   nav .active {
-    color: #ffffff;
+    color: #041472;
     text-decoration: underline;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.15rem;
+    font-weight: bolder;
   }
+
   main .row {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     max-width: 100%;
     padding: 2rem;
+  }
+  .cards {
+    padding: 0 10px;
+  }
+  .card-box {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    background-color: #9fa0af;
+    box-shadow: 0.4rem 0.4rem 1rem black;
+    border-radius: 10px;
+  }
+  .laundry-h2 {
+    font-size: 2.5rem;
+    color: #000000;
   }
 }

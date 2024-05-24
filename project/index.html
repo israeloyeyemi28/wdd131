@@ -21,15 +21,15 @@
 <body>
     <header>
         <div class="head-div">
-            <img src="images/Designer.jpeg" alt="Logo-image" class="logo">
+            <img src="images/Designer.jpeg" alt="FreshCleaners Logo" class="logo">
             <h1>Fresh<span id="head-txt">Cleaners</span></h1>
         </div>
         <button id="menu" title="Menu Button"></button>
         <nav class="navigation">
-            <a href="#" title="Home" class="active" id="home">Home</a>
-            <a href="#" title="Services" id="old">Services</a>
-            <a href="#" title="About-Us" id="new">About</a>
-            <a href="#" title="Contact-Us" large">Contact</a>
+            <a href="#" title="Home-Page" class="active" id="home">Home</a>
+            <a href="#" title="Service-Page" id="old">Services</a>
+            <a href="#" title="About-Pafge" id="new">About</a>
+            <a href="#" title="Contact-Page" large">Contact</a>
         </nav>
     </header>
     <main>
@@ -42,38 +42,48 @@
         <div class="row">
             <div class="location-div">
                 <i class="fa fa-1x fa-map-marker-alt text-white m-0 mr-3"></i>
-                <h5>Our Location</h5>
+                <h3>Our Location</h3>
                 <br>
-                <h3>123 Street, Cansas City, USA</h3>
+                <h4>123 Street, Cansas City, USA</h4>
             </div>
             <div class="email-div">
-                <a href="mailto:abcde1234@gmail.com">
-                    <i class="fa fa-1x fa-envelope"></i>
-                    <h5>Email Us</h5>
-                    <br>
-                    <h3>abcde1234@gmail.com</h3>
+
+                <i class="fa fa-1x fa-envelope"></i>
+                <h3>Email Us</h3>
+                <br>
+                <a href="mailto:abcde1234@gmail.com" style="font-size: 0.75rem;">
+                    <h4>freshcleaners@gmail.com</h4>
                 </a>
             </div>
             <div class="contact-div">
                 <i class="fa fa-1x fa-address-book"></i>
-                <h5>Contact Us</h5>
+                <h3>Contact Us</h3>
                 <br>
-                <h3>+123-456-7890</h3>
+                <h4>+123-456-7890
+                </h4>
             </div>
         </div>
         <div class="container">
             <div class="img-div">
-                <img src="images/blog-2.jpg" alt="Customer Holding a cloth" class="img-2">
-
-                <h1 class="h1-txt">Learn About Us</h1>
-                <h2>We deliver top-notch services to all our customers.</h2>
-                <br>
-                <h3 class="h3-txt">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus aspernatur debitis cupiditate
-                    voluptate veniam. Omnis vel dolorum optio perspiciatis minima eligendi laboriosam, debitis enim
-                    dolores
-                    consequatur quos suscipit mollitia quae ab illum ad recusandae accusamus.
-                </h3>
+                <picture>
+                    <source media="(min-width: 740px)" class="large-img" srcset="images/about.jpg" loading="lazy">
+                    <source media="(min-width: 300px)" srcset="images/blog-3.jpg" loading="lazy">
+                    <img src="images/blog-2.jpg" alt="Customer Holding a cloth" class="img-2" loading="lazy">
+                </picture>
+                <div class="learn-abt-us">
+                    <h2 class="h1-txt">Learn About Us</h2>
+                    <br>
+                    <h3 class="h3-txt">
+                        <strong>"</strong>Welcome to FreshCleaners , your premier destination for laundry services.
+                        Our mission is to provide exceptional cleaning solutions with a personal touch.
+                        With years of experience, our team is dedicated to delivering top-notch results.
+                        We use eco-friendly methods and state-of-the-art equipments to ensure the best care for your
+                        clothes.
+                        Our goal is to build long-lasting relationships with our customers and community.
+                        We strive for excellence in every aspect of our business.
+                        Come and experience delight with us. <strong>"</strong>
+                    </h3>
+                </div>
                 <div class="row list">
                     <i class="fa fa-check text-primary mr-2"></i>
                     <br>
@@ -132,7 +142,7 @@
         <div class="row">
             <div class="price-con">
                 <div class="price-box">
-                    <h4 class="h2-big">OUR PRICING PLAN</h4>
+                    <h1 class="h2-big">OUR PRICING PLAN</h1>
                     <h1 class="h1-big">THE BEST PLAN</h1>
 
                     <div class="cards">
@@ -140,9 +150,9 @@
                             <div class="price-plan">
                                 <h3>Basic</h3>
                                 <h1>
-                                    <small>$</small>49.99
-                                    <small>/MO</small>
-                                </h1>
+                                    <strong>$</strong>
+                                    49/MO
+                                    </h>
                             </div>
                             <div class="price-txt-box">
                                 <h1>Essential Clean</h1>
@@ -161,8 +171,8 @@
                             <div class="price-plan-standard">
                                 <h3>Standard</h3>
                                 <h1>
-                                    <small>$</small> 79.99
-                                    <small>/MO</small>
+                                    <strong>$</strong>
+                                    79.99/MO
                                 </h1>
                             </div>
                             <div class="price-txt-box">
@@ -182,8 +192,8 @@
                             <div class="price-plan-premium">
                                 <h3 class="premium">Premium</h3>
                                 <h1>
-                                    <small>$</small> 99.99
-                                    <small>/MO</small>
+                                    <strong>$</strong>
+                                    99.99/MO
                                 </h1>
                             </div>
                             <div class="price-txt-box">
@@ -206,20 +216,17 @@
     </main>
     <footer>
         <!-- <div class="footer-icons"> -->
-        <a class="media-icons" href="#">
+        <a class="media-icons" href="www.twitter.com">
             <i class="fab fa-twitter"></i></a>
-        <a class="media-icons" href="www.twitter.com"><i class="fab fa-facebook-f"></i></a>
-        <a class="media-icons" href="www.lnkedin.com"><i class="fab fa-linkedin-in"></i></a>
-        <a class="media-icons" href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a class="media-icons" href="www.facebook.com">
+            <i class="fab fa-facebook-f"></i></a>
+        <a class="media-icons" href="www.lnkedin.com">
+            <i class="fab fa-linkedin-in"></i></a>
+        <a class="media-icons" href="www.instagram.com">
+            <i class="fab fa-instagram"></i></a>
         <!-- </div> -->
         <h3>© 2024 Elite Pet Supplies. All rights reserved</h3>
-        <!-- <div class="foot-txt"> -->
-        <!-- <p><i class="fa fa-map-marker-alt"></i>Location
-        </p>
-        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890
-        </p>
-        <p><i class="fa fa-envelope mr-2"></i>Gmail</p>
-        </div> -->
+
     </footer>
 </body>
 
