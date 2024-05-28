@@ -330,7 +330,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--green-bg);
+  background-color: var(--blue-bg);
   border-radius: 50%;
   border: 15px solid white;
   box-shadow: 0 0.5rem 1rem black;
@@ -343,7 +343,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--gold);
+  background-color: var(--blue-bg);
   border-radius: 50%;
   border: 15px solid white;
   box-shadow: 0 0.5rem 1rem black;
@@ -403,10 +403,10 @@ p {
   line-height: 1.2;
 }
 .standard {
-  color: #125312;
+  color: #11288d;
 }
 .premium {
-  color: #52470a;
+  color: #11288d;
 }
 
 small {
@@ -521,8 +521,9 @@ footer p a {
   width: 80%;
   flex-direction: column;
   margin: 1.5rem 1.5rem;
-  background-color: green;
+  background-color: #062052;
   padding: 0 1rem 1rem 1rem;
+  color: white;
   margin: 3rem;
   border: 1px solid black;
 }
@@ -571,13 +572,13 @@ input[type="checkbox"] {
   font-size: 0.7rem;
 }
 .second-main {
-  background: linear-gradient(red, yellow);
+  background: linear-gradient(rgb(184, 184, 184), rgb(82, 82, 71));
   margin: 2rem;
   padding: 2rem;
   border-radius: 10px;
 }
 .third-main {
-  background: linear-gradient(blue, green);
+  background: linear-gradient(blue, #3312f1);
   margin: 2rem;
   padding: 2rem;
   border-radius: 10px;
@@ -607,7 +608,7 @@ input[type="checkbox"] {
   flex-direction: column;
   margin: 1rem;
   width: 100%;
-  z-index: 1;
+  height: 100%;
 }
 .customer-txt {
   color: blue;
@@ -617,6 +618,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  font-size: 0.95rem;
   padding: 1rem;
   background-color: #1649d4;
   justify-content: center;
@@ -649,14 +651,17 @@ label {
   display: block;
   text-align: left;
   padding: 0 20px;
+  color: white;
 }
 .contact-form {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
   padding: 1rem;
   flex-direction: column;
   background-color: #466086;
+  color: white;
   border-radius: 10px;
   margin: 1rem;
 }

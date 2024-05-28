@@ -33,7 +33,7 @@
     color: #000;
   }
   .navigation a:hover {
-    background-color: rgb(71, 255, 71);
+    background-color: #0c910c;
     border-radius: 10px;
   }
 
@@ -86,6 +86,8 @@
   }
   .customer-img {
     flex-direction: row;
+    width: 500px;
+    height: 500px;
   }
   .customer-img img {
     margin: 1.25rem;
