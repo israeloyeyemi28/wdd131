@@ -4,9 +4,7 @@ hamButton.addEventListener("click", function () {
   nav.classList.toggle("open");
   hamButton.classList.toggle("open");
 });
-// Form
-
-// get the selcet element
+// Get the selcet element
 const select = document.getElementById("product-name");
 const priceSpan = document.querySelector(".price-span");
 // the products array
